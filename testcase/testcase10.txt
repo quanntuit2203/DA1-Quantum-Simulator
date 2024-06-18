@@ -1,0 +1,12 @@
+reset 4
+write 7
+cnot 3 0
+write 5
+not 1
+rotatex 315 0
+cnot 0 1
+phase 360 2
+write 10
+phase 270 1
+rotatey 315 1
+measure

@@ -1,0 +1,7 @@
+reset 5
+write 26
+rotatex 90 0
+phase 315 1
+chadamard 4 2
+phase 135 0
+measure

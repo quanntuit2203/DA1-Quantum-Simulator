@@ -1,0 +1,12 @@
+reset 2
+write 3
+swap 1 0
+chadamard 1 0
+swap 1 0
+write 0
+not 0
+rotatey 180 0
+rotatey 135 0
+rotatey 0 0
+swap 1 0
+measure

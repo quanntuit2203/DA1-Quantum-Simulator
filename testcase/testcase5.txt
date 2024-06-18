@@ -1,0 +1,5 @@
+reset 5
+write 11
+write 4
+rotatey 315 0
+measure

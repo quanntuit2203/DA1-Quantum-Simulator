@@ -1,0 +1,7 @@
+reset 4
+write 14
+phase 0 2
+reset 3
+write 1
+phase 225 3
+measure

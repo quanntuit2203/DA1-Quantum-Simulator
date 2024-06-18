@@ -1,0 +1,9 @@
+reset 4
+write 6
+rotatey 270 3
+hadamard 1
+write 15
+reset 3
+cnot 0 2
+not 2
+measure

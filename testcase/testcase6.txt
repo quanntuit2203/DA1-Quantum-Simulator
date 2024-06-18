@@ -1,0 +1,11 @@
+reset 2
+write 2
+reset 4
+swap 1 0
+not 0
+swap 0 1
+phase 135 1
+hadamard 1
+cnot 1 0
+not 1
+measure

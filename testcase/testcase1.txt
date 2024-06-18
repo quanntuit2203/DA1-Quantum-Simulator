@@ -1,0 +1,5 @@
+reset 1
+write 0
+rotatey 360 0
+phase 45 0
+measure

@@ -1,0 +1,8 @@
+reset 5
+write 26
+rotatey 90 0
+chadamard 3 4
+chadamard 0 2
+rotatey 315 3
+hadamard 3
+measure
