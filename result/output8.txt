@@ -1,0 +1,5 @@
+Running test cases from testcase\testcase8.txt
+State: 00, Probability: 0.073
+State: 01, Probability: 0.427
+State: 10, Probability: 0.427
+State: 11, Probability: 0.073

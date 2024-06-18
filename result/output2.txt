@@ -1,0 +1,9 @@
+Running test cases from testcase\testcase2.txt
+State: 000, Probability: 0.0
+State: 001, Probability: 1.0
+State: 010, Probability: 0.0
+State: 011, Probability: 0.0
+State: 100, Probability: 0.0
+State: 101, Probability: 0.0
+State: 110, Probability: 0.0
+State: 111, Probability: 0.0

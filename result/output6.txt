@@ -1,0 +1,17 @@
+Running test cases from testcase\testcase6.txt
+State: 0000, Probability: 0.0
+State: 0001, Probability: 0.5
+State: 0010, Probability: 0.0
+State: 0011, Probability: 0.5
+State: 0100, Probability: 0.0
+State: 0101, Probability: 0.0
+State: 0110, Probability: 0.0
+State: 0111, Probability: 0.0
+State: 1000, Probability: 0.0
+State: 1001, Probability: 0.0
+State: 1010, Probability: 0.0
+State: 1011, Probability: 0.0
+State: 1100, Probability: 0.0
+State: 1101, Probability: 0.0
+State: 1110, Probability: 0.0
+State: 1111, Probability: 0.0
