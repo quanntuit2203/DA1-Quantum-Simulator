@@ -1,9 +1,3 @@
-// document.getElementById('run-ex-btn').addEventListener('click', () => {
-//   document.getElementById('output-ex-display').textContent = `State: 00,  Probability: 1.0\n
-// State: 01,  Probability: 0.0\n
-// State: 10,  Probability: 0.0\n
-// State: 11,  Probability: 0.0`;
-// });
 document.addEventListener('DOMContentLoaded', () => {
   const selector = document.getElementById('Ex-nums');
   const contentDispla = document.getElementById('ex-code-input');
