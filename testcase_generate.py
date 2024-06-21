@@ -16,7 +16,6 @@ commands = [
     "measure"
 ]
 
-
 def generate_command(command, num_bit):
     if command == "reset":
         num_bit = random.randint(1, 5)  # Số bit ngẫu nhiên từ 1 đến 5
@@ -36,15 +35,19 @@ def generate_command(command, num_bit):
     if command in ["cnot", "chadamard"]:
         target_bit = random.randint(0, num_bit - 1)
         condition_bit = random.randint(0, num_bit - 1)
-        while condition_bit == target_bit:
+        attempts = 0
+        while condition_bit == target_bit and attempts < 10:
             condition_bit = random.randint(0, num_bit - 1)
+            attempts += 1
         return f"{command} {target_bit} {condition_bit}"
 
     if command == "swap":
         bit1 = random.randint(0, num_bit - 1)
         bit2 = random.randint(0, num_bit - 1)
-        while bit1 == bit2:
+        attempts = 0
+        while bit1 == bit2 and attempts < 10:
             bit2 = random.randint(0, num_bit - 1)
+            attempts += 1
         return f"swap {bit1} {bit2}"
 
     if command == "measure":
