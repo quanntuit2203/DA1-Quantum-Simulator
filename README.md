@@ -20,3 +20,11 @@
   <li>File "app.py" là backend simulator, sử dụng server flask để gửi đến frontend</li>
   <li>Các thư mục "about us", "guilde", "main"... chứa các file frontend và backend của chúng.</li>
 </ul>
+
+<h2>4. Lưu ý khi tải về chạy thử</h2>
+<ul>
+  <li>...</li>
+  <li>...</li>
+  <li>...</li>
+  
+</ul>
