@@ -23,8 +23,7 @@
 
 <h2>4. Lưu ý khi tải về chạy thử</h2>
 <ul>
-  <li>...</li>
-  <li>...</li>
-  <li>...</li>
-  
+  <li>Do hiện tại đồ án chỉ chạy dưới dạng code chưa deloy web nên cần download từ Frontend về!!!</li>
+  <li>Trước khi chạy cần đưa các file html, css, js từ các folder nhỏ bên trong Frontend vào chung 1 folder</li>
+  <li>Lưu ý chạy file app.py trước để connect server Flask, sau đó có thể mở các file html để thử nghiệm</li>
 </ul>
