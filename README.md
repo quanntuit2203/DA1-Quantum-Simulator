@@ -1,5 +1,5 @@
 <h1>Báo cáo bổ sung DA1 - chương 4: Mô phỏng lập trình lượng tử</h1>
-<div>Chủ đề: Mô hình hóa hệ thóng lượng tử</div>
+<div>Chủ đề: Mô hình hóa hệ thống lượng tử</div>
 
 <h2>1. Thành viên và nhiệm vụ</h2>
 <ul>
@@ -7,7 +7,7 @@
   <li>Nguyễn Vũ Anh Minh - 21520350: Thực hiện Frontend</li>
 </ul>
 
-<h2>2. Về các thư mục trong git</h2>
+<h2>2. Về các thư mục</h2>
 <ul>
   <li>File source "simulator.py" là file code gốc, sử dụng testcase là các file có sẵn trong thư mục "testcase". In ra kết quả trong thư mục "result"</li>
   <li>Các testcase được tự động tạo lập bằng file "testcase_generate.py"</li>
