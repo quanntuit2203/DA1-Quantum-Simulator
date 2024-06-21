@@ -98,48 +98,48 @@ class QuantumSimulator:
 
 qs = QuantumSimulator()
 
-@app.route('/', methods=['GET', 'POST'])
-def index():
-    result = []
-    input_test_cases = ''
-    if request.method == 'POST':
-        input_test_cases = request.form['test_cases']
-        test_cases = input_test_cases.split('\n')
-        qs = QuantumSimulator()
-        for line in test_cases:
-            parts = line.strip().split()
-            if not parts:
-                continue
-            command = parts[0]
-            try:
-                if command == 'reset':
-                    qs.reset(int(parts[1]))
-                elif command == 'write':
-                    qs.write(int(parts[1]), [])
-                elif command == 'not':
-                    qs.not_gate([int(parts[1])])
-                elif command == 'cnot':
-                    qs.cnot_gate([int(parts[1])], [int(parts[2])])
-                elif command == 'hadamard':
-                    qs.hadamard([int(parts[1])])
-                elif command == 'chadamard':
-                    qs.chadamard([int(parts[1])], [int(parts[2])])
-                elif command == 'phase':
-                    qs.phase(float(parts[1]), [int(parts[2])])
-                elif command == 'swap':
-                    qs.swap(int(parts[1]), int(parts[2]), [])
-                elif command == 'rotatex':
-                    qs.rotatex(float(parts[1]), [int(parts[2])])
-                elif command == 'rotatey':
-                    qs.rotatey(float(parts[1]), [int(parts[2])])
-                elif command == 'measure':
-                    result = qs.measure()
-                else:
-                    result.append(f"Unknown command: {command}")
-            except Exception as e:
-                result.append(f"Error executing {command}: {str(e)}")
+# @app.route('/', methods=['GET', 'POST'])
+# def index():
+#     result = []
+#     input_test_cases = ''
+#     if request.method == 'POST':
+#         input_test_cases = request.form['test_cases']
+#         test_cases = input_test_cases.split('\n')
+#         qs = QuantumSimulator()
+#         for line in test_cases:
+#             parts = line.strip().split()
+#             if not parts:
+#                 continue
+#             command = parts[0]
+#             try:
+#                 if command == 'reset':
+#                     qs.reset(int(parts[1]))
+#                 elif command == 'write':
+#                     qs.write(int(parts[1]), [])
+#                 elif command == 'not':
+#                     qs.not_gate([int(parts[1])])
+#                 elif command == 'cnot':
+#                     qs.cnot_gate([int(parts[1])], [int(parts[2])])
+#                 elif command == 'hadamard':
+#                     qs.hadamard([int(parts[1])])
+#                 elif command == 'chadamard':
+#                     qs.chadamard([int(parts[1])], [int(parts[2])])
+#                 elif command == 'phase':
+#                     qs.phase(float(parts[1]), [int(parts[2])])
+#                 elif command == 'swap':
+#                     qs.swap(int(parts[1]), int(parts[2]), [])
+#                 elif command == 'rotatex':
+#                     qs.rotatex(float(parts[1]), [int(parts[2])])
+#                 elif command == 'rotatey':
+#                     qs.rotatey(float(parts[1]), [int(parts[2])])
+#                 elif command == 'measure':
+#                     result = qs.measure()
+#                 else:
+#                     result.append(f"Unknown command: {command}")
+#             except Exception as e:
+#                 result.append(f"Error executing {command}: {str(e)}")
 
-    return render_template('home.html', result='\n'.join(result), input_test_cases=input_test_cases)
+#     return render_template('home.html', result='\n'.join(result), input_test_cases=input_test_cases)
 
 @app.route('/run_code', methods=['POST'])
 def run_code():
