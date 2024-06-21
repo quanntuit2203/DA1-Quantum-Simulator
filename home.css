@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+                                                                                /* ĐỊNH DẠNG TRANG CHỦ */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1.5rem; /* 24px */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg equivalent */
+    justify-content: center;
+    gap: 3rem; /* 48px */
+    font-size: 1.5rem; /* 2xl equivalent */
+    font-weight: bold;
+}
+.home{
+    color: black;
+    text-decoration: none;
+}
+
+.home:hover{
+    color:#1976d2;
+}
+                    /*----------------------------------------------------------------------------------------------------------------*/
+                                                                                    /* GUIDE - RUN - RESET */
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem; /* 2 x 0.25rem = 0.5rem, tương đương với gap-2 trong Tailwind CSS */
+}
+/* guide */
+.button-guide {
+    /* display: inline-flex; */
+    align-items: center;
+    justify-content: center;
+    padding: 6px 16px;
+    border: 0.5px solid;
+    border-radius: 4px;
+    background-color: #ffd600;
+    color: black;
+    font-size: 1rem; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.button-guide:hover {
+    background-color: #e3f2fd; 
+    color: #1565c0; 
+}
+
+/* run */
+.button-run {
+    /* display: inline-flex; */
+    align-items: center;
+    justify-content: center;
+    padding: 6px 16px;
+    border: 0.5px solid black;
+    border-radius: 4px;
+    background-color: #4d63db;
+    color: #ecf2f9;
+    font-size: 1rem; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.button-run:hover {
+    background-color: #e3f2fd; 
+    color: #1565c0; 
+}
+
+/* reset */
+.button-reset {
+    /* display: inline-flex; */
+    align-items: center;
+    justify-content: center;
+    padding: 6px 16px;
+    border: 0.5px solid black;
+    border-radius: 4px;
+    background-color: #f05d56;
+    color: #ecf2f9;
+    font-size: 1rem; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.button-reset:hover i {
+    animation: spin 1s infinite linear;
+}
+
+.button-reset:hover {
+    background-color: #e3f2fd; 
+    color: #1565c0; 
+}
+
+/*  */
+.guide {
+    color: black; 
+    text-decoration: none;
+}
+
+.guide:hover {
+    color:#1565c0;
+}
+
+                    /*----------------------------------------------------------------------------------------------------------------*/
+                                                                /* GUIDE - RUN - RESET */
+.container {
+    
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+.main {
+    
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* .buttons-container {
+    margin-bottom: 20px;
+}
+
+.buttons-container button {
+
+    color: #2B46D3; 
+    border: 2px solid #2B46D3;
+    margin-right: 10px;
+    padding: 10px 20px;
+} */
+
+.editor-output-container {
+    
+    display: flex;
+    flex-grow: 1;
+}
+
+.code-editor, .output {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.code-editor label, .output label {
+    
+    display: block;
+    margin-bottom: 10px;
+}
+
+.code-editor-container {
+    display: flex;
+    position: relative;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    height: 95%; 
+    overflow: hidden;
+}
+
+.line-numbers {
+    background-color: #f8f8f8;
+    border: 3px solid #111111;
+    border-right: 1px solid #ddd;
+    padding: 2px;
+    text-align: center;
+    user-select: none;
+    width: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    font-family: monospace;
+    font-size: 14px; 
+    line-height: 1.5em; 
+    font-weight: lighter;
+}
+
+#line-numbers div {
+    height: 1.5em; 
+}
+
+#code-input {
+    font-family: monospace;
+    font-size: 14px; 
+    width: 100% ;
+    height: 100%;
+    padding-left: 40px; 
+    box-sizing: border-box;
+    resize: none;
+    overflow: auto ;
+    line-height: 1.5em; 
+    border: 3px solid #111111;
+    outline: none;
+    margin: 0;
+}
+
+.output-display {
+    background-color: #fff;
+    border: 3px solid #111111;
+    height:200px;
+    margin-bottom: 50px;
+    overflow: auto;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+}
+
+
+.output-buttons {
+    opacity: 1000;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.output-buttons button {
+    background-color: #dddddd21; 
+    color: #2B46D3; 
+    border: 3px solid ;
+    padding: 10px;
+    border-color: #2B46D3;
+    background-color: none;
+    border-radius: 9%;
+}
+
+.bloch-sphere-display {
+    background-color: #fff;
+    border: 3px solid #111111;
+    height:600px;
+    margin-top: 50px;
+    overflow: auto;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.de-content{
+    display: flex
+}
+
+.document {
+    flex-basis:50%
+}
+.examples{
+    flex-basis:50%
+}
+.ex-code-editor-container {
+    display: flex;
+    position: relative;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    height: 95%; 
+    overflow: hidden;
+}
+#ex-code-input {
+    font-family: monospace;
+    font-size: 14px; 
+    width: 200%;
+    height: 200%;
+    padding-left: 40px; 
+    box-sizing: border-box;
+    resize: none;
+    overflow: auto;
+    line-height: 1.5em; 
+    border: 3px solid #111111;
+    outline: none;
+    margin: 0;
+}

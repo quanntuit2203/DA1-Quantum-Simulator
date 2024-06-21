@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.uit.edu.vn/sites/vi/files/favicon.ico" type="image/vnd.microsoft.icon">
+    <title>Quantum Circuit Simulator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a class ="home" href="/home.html">Home Page</a>
+            <a class ="home" href="/Au.html">About Us!</a>
+        </div>
+        
+    </header>
+    
+    <div class="container">
+        <div class="main">
+            <div class="buttons-container">
+                <button class="button-guide" type="button">
+                    <a class ="guide" href= "\guide.html">
+                        <i class="fa fa-book" aria-hidden="true"></i> Guide
+                    </a>
+                </button>
+                
+                <button class="button-run" id ="run-btn" type="button">
+                    <i class="fa fa-play" aria-hidden="true"></i> Run
+                </button>
+                
+                <button class="button-reset" id ="reset-btn" type="button">
+                    <i class="fa fa-refresh"></i> Reset
+                </button>
+
+            </div>
+
+            <div class="editor-output-container">
+                <div class="code-editor">
+                    <P>Please enter your code here:</P>
+                    <div class="code-editor-container">
+                        <div id="line-numbers" class="line-numbers"></div>
+                        <textarea id="code-input" rows="10" oninput="updateLineNumbers()" onscroll="syncScroll()"></textarea>
+                    </div>
+                </div>
+                <div class="output">
+                    <P>Output here:</P>
+                    <div id="output-display" class="output-display"></div>
+                    <div class="output-buttons">
+                        <button id="state-vector-btn">State vector</button>
+                        <button id="density-matrix-btn">Density matrix</button>
+                        <button id="bloch-sphere-btn">Bloch sphere</button>
+                    </div>
+                    <div id="bloch-sphere-display" class="bloch-sphere-display">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
+

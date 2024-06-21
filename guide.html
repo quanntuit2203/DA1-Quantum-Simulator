@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://www.uit.edu.vn/sites/vi/files/favicon.ico" type="image/vnd.microsoft.icon">
+        <title>Quantum Circuit Simulator</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="guide.css">
+    </head>
+<body>
+    <header>
+        <div class="navbar">
+            <a class ="home" href="/home.html">Home Page</a>
+            <a class ="home" href="/Au.html">About Us!</a>
+        </div>
+    </header>
+    
+    <bold><h2>Welcome!</h2></bold>
+    <p><strong>Quantum Circuit Simulator</strong> is a website is intended for academic research.</p> 
+    <p>It helps users get acquainted with issues related to quantum programming.</p>
+    <!-- Our website is constantly being upgraded and developed, and we greatly appreciate feedback from users here. -->
+    <hr>
+
+    <bold><h2>Example and Documents</h2></bold>
+        <div class = "de-content">
+            <div class = "examples">
+                <center><h3>Examples</h3></center>
+                <div class = "ex-input">
+                    <p>Input:
+                    <select name="Ex-nums" id="Ex-nums">
+                        <option value="op1">Ex 1</option>
+                        <option value="op2">Ex 2</option>
+                        <option value="op3">Ex 3</option>
+                        <option value="op4">Ex 4</option>
+                        <option value="op5">Ex 5</option>
+                    </select>
+                    </p>
+                    <div class="ex-code-editor-container">
+                        <div id="line-numbers" class="line-numbers">
+                            1
+                            <br>
+                            2
+                            <br>
+                            3
+                            <br>
+                            4
+                            <br>
+                            5
+                            <br>
+                            6
+                            <br>
+                            7
+                            <br>
+                            8
+                            <br>
+                            9
+                            <br>
+                            10
+                        </div>
+                        <!-- <div id="in-ex-display" class="input-display"></div> -->
+                        <textarea id="ex-code-input" rows="10"readonly></textarea>
+                    </div>
+                </div>
+                
+                <div class = "ex-output">
+                    <p>Output here:
+                       <button class="button-run" id ="run-ex-btn" type="button">
+                            <i class="fa fa-play" aria-hidden="true"></i> Run
+                        </button> 
+                    </p>
+                    <div id="output-ex-display" class="output-display"></div>
+                </div>
+            </div>
+            <div class="document">
+                <center><h3>Documents</h3></center>
+                <table style="width:95%" >
+                    <tr>
+                        <th>Commands</th>
+                        <th>Explain</th>
+                    </tr>
+                    <tr>
+                        <td>reset(num_qubits)</td>
+                        <td>Set up a quantum simulation, with <i>num_qubits</i> qubits.</td>
+                    </tr>
+                    <tr>
+                        <td>write(value, target_qubits)</td>
+                        <td>Write the specified value to the <i>target qubits</i>.</td>
+                    </tr>
+                    <tr>
+                        <td>not_gate(target_qubits)</td>
+                        <td>Perform a logical <strong>NOT</strong> operation on the qubits specified by <i>target_qubits</i></td>
+                    </tr>
+                    <tr>
+                        <td>cnot_gate(target_qubits, condition_qubits)</td>
+                        <td>Perform a logical <strong>CNOT</strong> operation on the qubits specified by <i>target_qubits</i>, using <i>condition_qubits</i> as the condition</td>
+                    </tr>
+                    <tr>
+                        <td>hadamard(target_qubits)</td>
+                        <td>Perform a <strong>HADAMARD</strong> operation on the qubits specified by <i>target_qubits</i></td>
+                    </tr>
+                    <tr>
+                        <td>chadamard(target_qubits,condition_qubits)</td>
+                        <td>Perform a <strong>CHADAMARD</strong> operation on the qubits specified by <i>target_qubits</i>, using <i>condition_qubits</i> as the condition</td>
+                    </tr>
+                    <tr>
+                        <td>swap(qubit1, qubit2, condition_qubits)</td>
+                        <td>Swap two qubits specified by <i>qubit1</i> and <i>qubit2</i>, using <i>condition_qubits</i> as the condition</td>
+                    </tr>
+                    <tr>
+                        <td>phase(theta_degrees,target_qubits)</td>
+                        <td>Perform a <strong>Z rotation</strong> (phase), by the specified angle.
+                        <br>
+                        <strong>Important note:</strong> If more than one qubit is specified, this will perform a conditional phase shift, using all specified qubits (like a CZ gate).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>rotatex(theta_degrees,target_qubits)</td>
+                        <td>Rotate in <strong>X rotation</strong> </td>
+                    </tr>
+                    <tr>
+                        <td>rotatey(theta_degrees,target_qubits)</td>
+                        <td>Rotate in <strong>Y rotation</strong></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="guide.js"></script>
+</body>
+</html>
