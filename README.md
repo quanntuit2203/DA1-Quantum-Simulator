@@ -15,8 +15,8 @@
   
 </ul>
 
-<h2>3. Cấu trúc hệ thống website</h2>
+<h2>3. Cấu trúc hệ thống website (thư mục frontend)</h2>
 <ul>
-  <li>File "app.py" là backend, sử dụng server flask để gửi đến frontend</li>
-  <li>Thư mục ... chứa file HTML, thư mục ... chứa file css</li>
+  <li>File "app.py" là backend simulator, sử dụng server flask để gửi đến frontend</li>
+  <li>Các thư mục "about us", "guilde", "main"... chứa các file frontend và backend của chúng.</li>
 </ul>
